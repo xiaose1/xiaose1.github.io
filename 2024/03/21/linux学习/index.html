@@ -18,7 +18,7 @@
 <meta property="og:description" content="linux命令的通用格式Linux命令基础command [-options] [parameter]命令本体，即命令本身可选选项，控制命令的行为细节可选参数，控制命令的指向目标 home目录每个linux操作用户在Linux系统的个人账户目录，路径在:&#x2F;home&#x2F;用户名 工作目录默认设置的工作目录是在用户的home目录 ls命令入门语法:ls [-a -l -h] [linu">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-03-21T09:51:14.000Z">
-<meta property="article:modified_time" content="2024-03-27T12:58:51.685Z">
+<meta property="article:modified_time" content="2024-04-17T00:59:34.142Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -235,7 +235,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">446字</span>
+      <span class="post-count">866字</span>
     </span>
   </span>
 
@@ -244,7 +244,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">3分</span>
     </span>
   </span>
 </div>
@@ -276,7 +276,13 @@
 <li><strong>..</strong> 表示上一级目录，例：cd .. (返回上一级目录)，cd ..&#x2F;.. (返回上两级目录)</li>
 <li><strong>~</strong> 表示用户的home目录，例：cd ~ 或 cd ~&#x2F;Desktop</li>
 </ul>
-<h3 id="mkdir命令"><a href="#mkdir命令" class="headerlink" title="mkdir命令"></a>mkdir命令</h3><p>语法：mkdir [-p] linux路径<br>参数必填，表示创建目录的路径，相对、绝对都可以<br>-p的作用：自动创建不存在的目录，可用于创建多层级的目录</p>
+<h3 id="mkdir命令"><a href="#mkdir命令" class="headerlink" title="mkdir命令"></a>mkdir命令</h3><p>用于创建文件夹<br>语法：mkdir [-p] linux路径<br>参数必填，表示创建目录的路径，相对、绝对都可以<br>-p的作用：自动创建不存在的目录，可用于创建多层级的目录</p>
+<h3 id="touch命令"><a href="#touch命令" class="headerlink" title="touch命令"></a>touch命令</h3><p>用于创建一个新的文件<br>语法：touch Linux路径<br>参数必填，表示创建的文件的路径</p>
+<h3 id="cat命令"><a href="#cat命令" class="headerlink" title="cat命令"></a>cat命令</h3><p>用于查看文件内容<br>语法：cat linux路径<br>参数必填，表示要查看的文件的路径</p>
+<h3 id="more命令"><a href="#more命令" class="headerlink" title="more命令"></a>more命令</h3><p>用于查看文件<br>语法：more Linux路径<br>参数必填，表示要查看的文件的路径，<strong>与cat命令不同，more按页查询</strong><br><strong>空格进行翻页，回车按行查看，q退出查询</strong></p>
+<h3 id="cp命令"><a href="#cp命令" class="headerlink" title="cp命令"></a>cp命令</h3><p>用于复制文件或文件夹<br>语法：cp [-r] 参数1 参数2<br>-r，可选，用于复制文件夹使用<br>参数1，Linux路径，表示被复制的文件或文件夹<br>参数2，Linux路径，表示要复制去的文件</p>
+<h3 id="mv命令"><a href="#mv命令" class="headerlink" title="mv命令"></a>mv命令</h3><p>用于查看文件内容<br>语法：Linux路径，表示被移动的文件或文件夹<br>参数1，Linux路径，表示被移动的文件或文件夹<br>参数2，Linux路径，表示要移动去的地方，如果目标不存在，则进行改名，确保目标存在</p>
+<h3 id="rm命令"><a href="#rm命令" class="headerlink" title="rm命令"></a>rm命令</h3><p>用来复制文件或文件夹<br>语法：rm [-r -f] 参数1 参数2 …. 参数n<br>-r 选项，可选，文件夹删除<br>-f 选项，可选，用于强制删除（普通用户不提示，root用户提示）<br>参数，表示被删除的文件或文件夹路径，支持多个，空格隔开<br>参数支持通配符 * ，用于模糊匹配<br>rm是一个危险的命令，特别是在root用户的时候，需谨慎使用<br>如下命令，效果等同在windows上执行格式化：<br>rm -rf &#x2F;<br>rm -rf &#x2F;*</p>
 
     
 
@@ -404,6 +410,15 @@
 
 
 <nav id="article-nav">
+  
+    <a href="/2024/05/20/python%E7%88%AC%E8%99%AB/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
   
     <a href="/2024/03/13/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
